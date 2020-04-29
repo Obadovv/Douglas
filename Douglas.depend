@@ -1,0 +1,102 @@
+# depslib dependency file v1.0
+1588102661 source:c:\users\obadov\desktop\projekat_mia\douglas\main.cpp
+	<iostream>
+
+1588110917 source:c:\users\obadov\desktop\projekat_mia\douglas\src\sampon.cpp
+	"sampon.h"
+
+1588107744 c:\users\obadov\desktop\projekat_mia\douglas\include\sampon.h
+	<Proizvod.hpp>
+
+1588109906 c:\users\obadov\desktop\projekat_mia\douglas\include\proizvod.hpp
+	<string>
+
+1588107710 source:c:\users\obadov\desktop\projekat_mia\douglas\src\krema.cpp
+	"krema.hpp"
+
+1588109800 c:\users\obadov\desktop\projekat_mia\douglas\include\krema.hpp
+	<Proizvod.hpp>
+
+1588107997 source:c:\users\obadov\desktop\projekat_mia\douglas\src\ulje.cpp
+	"ulje.hpp"
+
+1588107877 c:\users\obadov\desktop\projekat_mia\douglas\include\ulje.hpp
+	<Proizvod.hpp>
+
+1588107255 source:c:\users\obadov\desktop\projekat_mia\douglas\src\piling.cpp
+	"piling.hpp"
+
+1588107274 c:\users\obadov\desktop\projekat_mia\douglas\include\piling.hpp
+	<Proizvod.hpp>
+
+1588110777 source:c:\users\obadov\desktop\projekat_mia\douglas\src\poklonpaket.cpp
+	"poklonpaket.hpp"
+
+1588111594 c:\users\obadov\desktop\projekat_mia\douglas\include\poklonpaket.hpp
+	"proizvod.hpp"
+	"sampon.h"
+	"krema.hpp"
+	"ulje.hpp"
+	"piling.hpp"
+
+1588111514 source:c:\users\obadov\desktop\projekat_mia\douglas\src\akcija.cpp
+	"akcija.hpp"
+
+1588111500 c:\users\obadov\desktop\projekat_mia\douglas\include\akcija.hpp
+	"proizvod.hpp"
+	"sampon.h"
+	"krema.hpp"
+	"ulje.hpp"
+	"piling.hpp"
+
+1588197921 source:c:\users\mia\desktop\projekat_mia\douglas\main.cpp
+	<iostream>
+	"poklonpaket.hpp"
+
+1588196540 source:c:\users\mia\desktop\projekat_mia\douglas\src\akcija.cpp
+	"akcija.hpp"
+
+1588196836 c:\users\mia\desktop\projekat_mia\douglas\include\akcija.hpp
+	"proizvod.hpp"
+	"sampon.h"
+	"krema.hpp"
+	"ulje.hpp"
+	"piling.hpp"
+
+1588109906 c:\users\mia\desktop\projekat_mia\douglas\include\proizvod.hpp
+	<string>
+
+1588107744 c:\users\mia\desktop\projekat_mia\douglas\include\sampon.h
+	<Proizvod.hpp>
+
+1588109800 c:\users\mia\desktop\projekat_mia\douglas\include\krema.hpp
+	<Proizvod.hpp>
+
+1588111955 c:\users\mia\desktop\projekat_mia\douglas\include\ulje.hpp
+	<Proizvod.hpp>
+
+1588107274 c:\users\mia\desktop\projekat_mia\douglas\include\piling.hpp
+	<Proizvod.hpp>
+
+1588107710 source:c:\users\mia\desktop\projekat_mia\douglas\src\krema.cpp
+	"krema.hpp"
+
+1588107255 source:c:\users\mia\desktop\projekat_mia\douglas\src\piling.cpp
+	"piling.hpp"
+
+1588196373 source:c:\users\mia\desktop\projekat_mia\douglas\src\poklonpaket.cpp
+	"poklonpaket.hpp"
+
+1588197166 c:\users\mia\desktop\projekat_mia\douglas\include\poklonpaket.hpp
+	"proizvod.hpp"
+	"sampon.h"
+	"krema.hpp"
+	"ulje.hpp"
+	"piling.hpp"
+
+1588110917 source:c:\users\mia\desktop\projekat_mia\douglas\src\sampon.cpp
+	"sampon.h"
+
+1588107997 source:c:\users\mia\desktop\projekat_mia\douglas\src\ulje.cpp
+	"ulje.hpp"
+
