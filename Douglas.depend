@@ -100,3 +100,202 @@
 1588107997 source:c:\users\mia\desktop\projekat_mia\douglas\src\ulje.cpp
 	"ulje.hpp"
 
+1588709997 source:c:\users\stasa&dijana\desktop\programiranje\douglas-master\main.cpp
+	"poklonpaket.hpp"
+	"akcija.hpp"
+	"ucitajspisak.hpp"
+	"proizvod.hpp"
+	"sampon.h"
+	"ulje.hpp"
+	"krema.hpp"
+	"piling.hpp"
+
+1588195149 c:\users\stasa&dijana\desktop\programiranje\douglas-master\include\poklonpaket.hpp
+	"proizvod.hpp"
+	"sampon.h"
+	"krema.hpp"
+	"ulje.hpp"
+	"piling.hpp"
+
+1588195149 c:\users\stasa&dijana\desktop\programiranje\douglas-master\include\proizvod.hpp
+	<string>
+
+1588195149 c:\users\stasa&dijana\desktop\programiranje\douglas-master\include\sampon.h
+	<Proizvod.hpp>
+
+1588195149 c:\users\stasa&dijana\desktop\programiranje\douglas-master\include\krema.hpp
+	<Proizvod.hpp>
+
+1588702262 c:\users\stasa&dijana\desktop\programiranje\douglas-master\include\ulje.hpp
+	<Proizvod.hpp>
+
+1588195149 c:\users\stasa&dijana\desktop\programiranje\douglas-master\include\piling.hpp
+	<Proizvod.hpp>
+
+1588195149 source:c:\users\stasa&dijana\desktop\programiranje\douglas-master\src\akcija.cpp
+	"akcija.hpp"
+
+1588195149 c:\users\stasa&dijana\desktop\programiranje\douglas-master\include\akcija.hpp
+	"proizvod.hpp"
+	"sampon.h"
+	"krema.hpp"
+	"ulje.hpp"
+	"piling.hpp"
+
+1588195149 source:c:\users\stasa&dijana\desktop\programiranje\douglas-master\src\krema.cpp
+	"krema.hpp"
+
+1588195149 source:c:\users\stasa&dijana\desktop\programiranje\douglas-master\src\piling.cpp
+	"piling.hpp"
+
+1588195149 source:c:\users\stasa&dijana\desktop\programiranje\douglas-master\src\poklonpaket.cpp
+	"poklonpaket.hpp"
+
+1588195149 source:c:\users\stasa&dijana\desktop\programiranje\douglas-master\src\sampon.cpp
+	"sampon.h"
+
+1588195149 source:c:\users\stasa&dijana\desktop\programiranje\douglas-master\src\ulje.cpp
+	"ulje.hpp"
+
+1588709357 source:c:\users\stasa&dijana\desktop\programiranje\douglas-master\src\ucitajspisak.cpp
+	"ucitajspisak.hpp"
+
+1588709424 c:\users\stasa&dijana\desktop\programiranje\douglas-master\include\ucitajspisak.hpp
+	<vector>
+	<string>
+	<sstream>
+	<fstream>
+	<iostream>
+
+1588713597 source:c:\users\mia\desktop\douglas-master\main.cpp
+	"poklonpaket.hpp"
+	"akcija.hpp"
+	"ucitajspisak.hpp"
+	"proizvod.hpp"
+	"sampon.h"
+	"ulje.hpp"
+	"krema.hpp"
+	"piling.hpp"
+
+1588198749 c:\users\mia\desktop\douglas-master\include\poklonpaket.hpp
+	"proizvod.hpp"
+	"sampon.h"
+	"krema.hpp"
+	"ulje.hpp"
+	"piling.hpp"
+
+1588198749 c:\users\mia\desktop\douglas-master\include\proizvod.hpp
+	<string>
+
+1588198749 c:\users\mia\desktop\douglas-master\include\sampon.h
+	<Proizvod.hpp>
+
+1588198749 c:\users\mia\desktop\douglas-master\include\krema.hpp
+	<Proizvod.hpp>
+
+1588705862 c:\users\mia\desktop\douglas-master\include\ulje.hpp
+	<Proizvod.hpp>
+
+1588198749 c:\users\mia\desktop\douglas-master\include\piling.hpp
+	<Proizvod.hpp>
+
+1588198749 c:\users\mia\desktop\douglas-master\include\akcija.hpp
+	"proizvod.hpp"
+	"sampon.h"
+	"krema.hpp"
+	"ulje.hpp"
+	"piling.hpp"
+
+1588715370 c:\users\mia\desktop\douglas-master\include\ucitajspisak.hpp
+	<string>
+	<sstream>
+	<fstream>
+	<iostream>
+
+1588198749 source:c:\users\mia\desktop\douglas-master\src\akcija.cpp
+	"akcija.hpp"
+
+1588198749 source:c:\users\mia\desktop\douglas-master\src\krema.cpp
+	"krema.hpp"
+
+1588198749 source:c:\users\mia\desktop\douglas-master\src\piling.cpp
+	"piling.hpp"
+
+1588198749 source:c:\users\mia\desktop\douglas-master\src\poklonpaket.cpp
+	"poklonpaket.hpp"
+
+1588198749 source:c:\users\mia\desktop\douglas-master\src\sampon.cpp
+	"sampon.h"
+
+1588198749 source:c:\users\mia\desktop\douglas-master\src\ulje.cpp
+	"ulje.hpp"
+
+1588715214 source:c:\users\mia\desktop\douglas-master\src\ucitajspisak.cpp
+	"ucitajspisak.hpp"
+
+1588715882 source:c:\users\mia\desktop\gittest\douglas\main.cpp
+	"poklonpaket.hpp"
+	"akcija.hpp"
+	"ucitajspisak.hpp"
+	"proizvod.hpp"
+	"sampon.h"
+	"ulje.hpp"
+	"krema.hpp"
+	"piling.hpp"
+
+1588198749 c:\users\mia\desktop\gittest\douglas\include\poklonpaket.hpp
+	"proizvod.hpp"
+	"sampon.h"
+	"krema.hpp"
+	"ulje.hpp"
+	"piling.hpp"
+
+1588198749 c:\users\mia\desktop\gittest\douglas\include\proizvod.hpp
+	<string>
+
+1588198749 c:\users\mia\desktop\gittest\douglas\include\sampon.h
+	<Proizvod.hpp>
+
+1588198749 c:\users\mia\desktop\gittest\douglas\include\krema.hpp
+	<Proizvod.hpp>
+
+1588705862 c:\users\mia\desktop\gittest\douglas\include\ulje.hpp
+	<Proizvod.hpp>
+
+1588198749 c:\users\mia\desktop\gittest\douglas\include\piling.hpp
+	<Proizvod.hpp>
+
+1588198749 c:\users\mia\desktop\gittest\douglas\include\akcija.hpp
+	"proizvod.hpp"
+	"sampon.h"
+	"krema.hpp"
+	"ulje.hpp"
+	"piling.hpp"
+
+1588715370 c:\users\mia\desktop\gittest\douglas\include\ucitajspisak.hpp
+	<string>
+	<sstream>
+	<fstream>
+	<iostream>
+
+1588198749 source:c:\users\mia\desktop\gittest\douglas\src\akcija.cpp
+	"akcija.hpp"
+
+1588198749 source:c:\users\mia\desktop\gittest\douglas\src\krema.cpp
+	"krema.hpp"
+
+1588198749 source:c:\users\mia\desktop\gittest\douglas\src\piling.cpp
+	"piling.hpp"
+
+1588198749 source:c:\users\mia\desktop\gittest\douglas\src\poklonpaket.cpp
+	"poklonpaket.hpp"
+
+1588198749 source:c:\users\mia\desktop\gittest\douglas\src\sampon.cpp
+	"sampon.h"
+
+1588198749 source:c:\users\mia\desktop\gittest\douglas\src\ulje.cpp
+	"ulje.hpp"
+
+1588715214 source:c:\users\mia\desktop\gittest\douglas\src\ucitajspisak.cpp
+	"ucitajspisak.hpp"
+

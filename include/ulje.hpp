@@ -14,7 +14,7 @@ class Ulje : public Proizvod
         int    getCena()         { return cena; }
         int    getKolicina()     { return kolicina; }
         bool   getPol()          { return pol; }
-        string getNamena()       { return vrsta; }
+        string getVrsta()        { return vrsta; }
 
         void setKolicina (int val)    { kolicina = val; }
         void setCena     (int val)    { cena = val; }
