@@ -22,6 +22,8 @@ class PoklonPaket
                                                        U(cena/kombinacija,100,false,"Telo"),
                                                        P(cena/kombinacija,100,false,"Med"){}
         void kreirajPaket(bool pol,int cena,int kombinacija);
+
+        friend ostream& operator<<(ostream& izlaz, const PoklonPaket& pp);
 };
 
 #endif // POKLONPAKET_HPP

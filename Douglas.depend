@@ -299,3 +299,70 @@
 1588715214 source:c:\users\mia\desktop\gittest\douglas\src\ucitajspisak.cpp
 	"ucitajspisak.hpp"
 
+1588717394 source:c:\users\mia\desktop\douglas\src\akcija.cpp
+	"akcija.hpp"
+
+1588717394 c:\users\mia\desktop\douglas\include\akcija.hpp
+	"proizvod.hpp"
+	"sampon.h"
+	"krema.hpp"
+	"ulje.hpp"
+	"piling.hpp"
+
+1589145868 c:\users\mia\desktop\douglas\include\proizvod.hpp
+	<iostream>
+	<string>
+
+1589150222 c:\users\mia\desktop\douglas\include\sampon.h
+	<Proizvod.hpp>
+
+1589150289 c:\users\mia\desktop\douglas\include\krema.hpp
+	<Proizvod.hpp>
+
+1589150079 c:\users\mia\desktop\douglas\include\ulje.hpp
+	<Proizvod.hpp>
+
+1589150246 c:\users\mia\desktop\douglas\include\piling.hpp
+	<Proizvod.hpp>
+
+1589149148 source:c:\users\mia\desktop\douglas\src\krema.cpp
+	"krema.hpp"
+
+1589149187 source:c:\users\mia\desktop\douglas\src\piling.cpp
+	"piling.hpp"
+
+1589147202 source:c:\users\mia\desktop\douglas\src\poklonpaket.cpp
+	"poklonpaket.hpp"
+
+1589147057 c:\users\mia\desktop\douglas\include\poklonpaket.hpp
+	"proizvod.hpp"
+	"sampon.h"
+	"krema.hpp"
+	"ulje.hpp"
+	"piling.hpp"
+
+1588717394 source:c:\users\mia\desktop\douglas\src\ucitajspisak.cpp
+	"ucitajspisak.hpp"
+
+1588717394 c:\users\mia\desktop\douglas\include\ucitajspisak.hpp
+	<string>
+	<sstream>
+	<fstream>
+	<iostream>
+
+1589149225 source:c:\users\mia\desktop\douglas\src\ulje.cpp
+	"ulje.hpp"
+
+1589150328 source:c:\users\mia\desktop\douglas\main.cpp
+	"poklonpaket.hpp"
+	"akcija.hpp"
+	"ucitajspisak.hpp"
+	"proizvod.hpp"
+	"sampon.h"
+	"ulje.hpp"
+	"krema.hpp"
+	"piling.hpp"
+
+1589148071 source:c:\users\mia\desktop\douglas\src\sampon.cpp
+	"sampon.h"
+

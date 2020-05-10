@@ -1,6 +1,7 @@
 #ifndef PROIZVOD_HPP
 #define PROIZVOD_HPP
 
+#include<iostream>
 #include <string>
 using namespace std;
 

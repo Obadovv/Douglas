@@ -7,41 +7,48 @@
 #include "krema.hpp"
 #include "piling.hpp"
 
-/****Funkcionalnost koju cu dodati u projekat*****
-* 1. Popunjavanje polica
-* 2. Trenutno stanje, kolicna paketa i akcija
-* 3. Pocetno i konacno stanje nakon radnog dana
-**************************************************/
 int main()
 {
-    /*
+
     PoklonPaket PK(false,1000,2);
-
-    cout<<"*****PRE KREIRANJA PAKETA"<<endl;
-    cout<<PK.U.getVrsta()  <<endl;
-    cout<<PK.U.getCena()    <<endl;
-    cout<<PK.U.getKolicina()<<endl;
-
-    //true je za zenski, false za muski
     PK.kreirajPaket(false,60000,2);
 
-    cout<<"*****POSLE KREIRANJA PAKETA"<<endl;
-    cout<<PK.U.getVrsta()  <<endl;
-    cout<<PK.U.getCena()    <<endl;
-    cout<<PK.U.getKolicina()<<endl;
-    */
+    Sampon s;
+    Sampon s1(300,150,false,"Protiv Peruti");
+    Sampon s2(PK.S);
 
-    ucitajSpisak parser;
-    cout<<"******************"<<endl;
-    parser.ucitajSve();
-    cout<<"******************"<<endl;
-    parser.ispisiSampone();
-    cout<<"******************"<<endl;
-    parser.ispisiKreme();
-    cout<<"******************"<<endl;
-    parser.ispisiUlja();
-    cout<<"******************"<<endl;
-    parser.ispisiPilinge();
-    cout<<"******************"<<endl;
+    Krema  k;
+    Krema  k1(120,190,true,"Za lice");
+    Krema  k2(PK.K);
+
+    Ulje u;
+    Ulje u1(399,200,false,"Za masazu");
+    Ulje u2(PK.U);
+
+    Piling p;
+    Piling p1(499,150,false,"Med");
+    Piling p2(PK.P);
+
+    cout<<"*****SAMPONI*****"<<endl;
+    cout<<s;
+    cout<<s1;
+    cout<<s2;
+    cout<<s.getUkupnaKolicina();
+    cout<<"*****KREME*****"<<endl;
+    cout<<k;
+    cout<<k1;
+    cout<<k2;
+    cout<<k.getUkupnaKolicina();
+    cout<<"*****ULJA*****"<<endl;
+    cout<<u;
+    cout<<u1;
+    cout<<u2;
+    cout<<u.getUkupnaKolicina();
+    cout<<"*****PILINZI*****"<<endl;
+    cout<<p;
+    cout<<p1;
+    cout<<p2;
+    cout<<p.getUkupnaKolicina();
+
     return 0;
 }

@@ -11,7 +11,6 @@ void PoklonPaket::kreirajPaket(bool pol,int cena,int kombinacija)
     {
         kombinacija = 2;
     }
-
     //Zenski
     if(pol == true)
     {
@@ -37,6 +36,15 @@ void PoklonPaket::kreirajPaket(bool pol,int cena,int kombinacija)
         K.setNamena("Poklon Paket Krema Muska");
         K.setKolicina(250);
         K.setPol(pol);
-
     }
+}
+ostream& operator<<(ostream& izlaz, const PoklonPaket& pp){
+
+    izlaz<<"*****Poklon paket*****"<<endl;
+    izlaz<<pp.S<<endl;
+    izlaz<<pp.K<<endl;
+    izlaz<<pp.U<<endl;
+    izlaz<<pp.P<<endl;
+
+    return izlaz;
 }
