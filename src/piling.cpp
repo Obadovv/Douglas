@@ -42,6 +42,7 @@ ostream& operator<<(ostream& izlaz, const Piling& p){
 }
 Piling::~Piling()
 {
+    ukupnaKolicinaPilinga--;
     //dtor
 }
 int Piling::ukupnaKolicinaPilinga=0;

@@ -24,7 +24,8 @@ Sampon::Sampon(const Sampon& other)
     svojstvo = other.svojstvo;
     ukupnaKolicinaSampona++;
 }
-ostream& operator<<(ostream& izlaz, const Sampon& s){
+ostream& operator<<(ostream& izlaz, const Sampon& s)
+{
 
     izlaz<<"*****SAMPON*****"<<endl;
     izlaz<<"Svojstvo : ["<<s.svojstvo<<"]"<<endl;
@@ -43,5 +44,6 @@ ostream& operator<<(ostream& izlaz, const Sampon& s){
 Sampon::~Sampon()
 {
     //dtor
+    ukupnaKolicinaSampona--;
 }
 int Sampon::ukupnaKolicinaSampona=0;

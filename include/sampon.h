@@ -10,17 +10,19 @@ class Sampon : public Proizvod
         Sampon(const Sampon& other);
         ~Sampon();
 
-        int  getCena          () const { return cena; }
-        int  getKolicina      () const { return kolicina; }
-        bool getPol           () const { return pol; }
-        string getSvojstvo    () const { return svojstvo; }
-        int  getUkupnaKolicina() const { return ukupnaKolicinaSampona; }
+        int    getCena          () const { return cena; }
+        int    getKolicina      () const { return kolicina; }
+        bool   getPol           () const { return pol; }
+        string getSvojstvo      () const { return svojstvo; }
+        int    getUkupnaKolicina() const { return ukupnaKolicinaSampona; }
 
-        void setCena    (int val)    { cena = val; }
-        void setKolicina(int val)    { kolicina = val; }
-        void setPol     (bool val)   { pol = val; }
-        void setSvojstvo(string val) { svojstvo = val; }
 
+        void setCena      (int val)    { cena = val; }
+        void setKolicina  (int val)    { kolicina = val; }
+        void setPol       (bool val)   { pol = val; }
+        void setSvojstvo  (string val) { svojstvo = val; }
+
+        void primeniPopust(int val){setCena(getCena()-val);}
         friend ostream& operator<<(ostream& izlaz, const Sampon& s);
     private:
         int  cena;

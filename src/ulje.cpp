@@ -26,7 +26,8 @@ Ulje::Ulje(const Ulje& other)
     vrsta    = other.vrsta;
     ukupnaKolicinaUlja++;
 }
-ostream& operator<<(ostream& izlaz, const Ulje& u){
+ostream& operator<<(ostream& izlaz, const Ulje& u)
+{
 
     izlaz<<"*****ULJE*****"<<endl;
     izlaz<<"Vrsta    : ["<<u.vrsta<<"]"<<endl;
@@ -44,7 +45,7 @@ ostream& operator<<(ostream& izlaz, const Ulje& u){
 }
 Ulje::~Ulje()
 {
-    //dtor
+    ukupnaKolicinaUlja--;
 }
 int Ulje::ukupnaKolicinaUlja=0;
 

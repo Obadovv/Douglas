@@ -43,6 +43,7 @@ ostream& operator<<(ostream& izlaz, const Krema& k){
 }
 Krema::~Krema()
 {
+    ukupnaKolicinaKrema--;
     //dtor
 }
 int Krema::ukupnaKolicinaKrema=0;

@@ -6,49 +6,87 @@
 #include "ulje.hpp"
 #include "krema.hpp"
 #include "piling.hpp"
+#include "polica.hpp"
+#include "kasadouglas.hpp"
 
 int main()
 {
 
-    PoklonPaket PK(false,1000,2);
-    PK.kreirajPaket(false,60000,2);
+    Kutija kutijaSampona = {5,200,100,true, "ProtivPeruti"};
+    Kutija kutijaKrema   = {5,200,100,false,"ProtivBora"};
+    Kutija kutijaUlja    = {5,200,100,false,"ZaMasazu"};
+    Kutija kutijaPilinga = {5,200,100,true, "Cokolada"};
 
-    Sampon s;
-    Sampon s1(300,150,false,"Protiv Peruti");
-    Sampon s2(PK.S);
-
-    Krema  k;
-    Krema  k1(120,190,true,"Za lice");
-    Krema  k2(PK.K);
-
-    Ulje u;
-    Ulje u1(399,200,false,"Za masazu");
-    Ulje u2(PK.U);
-
-    Piling p;
-    Piling p1(499,150,false,"Med");
-    Piling p2(PK.P);
-
-    cout<<"*****SAMPONI*****"<<endl;
-    cout<<s;
-    cout<<s1;
-    cout<<s2;
-    cout<<s.getUkupnaKolicina();
-    cout<<"*****KREME*****"<<endl;
-    cout<<k;
-    cout<<k1;
-    cout<<k2;
-    cout<<k.getUkupnaKolicina();
-    cout<<"*****ULJA*****"<<endl;
-    cout<<u;
-    cout<<u1;
-    cout<<u2;
-    cout<<u.getUkupnaKolicina();
-    cout<<"*****PILINZI*****"<<endl;
-    cout<<p;
-    cout<<p1;
-    cout<<p2;
-    cout<<p.getUkupnaKolicina();
-
+    Polica polica;
+    KasaDouglas kasa;
+    /*Pocetno popunjavanje*/
+    polica.popuniPolicuSamponima(kutijaSampona);
+    polica.popuniPolicuKremama(kutijaKrema);
+    polica.popuniPolicuUljima(kutijaUlja);
+    polica.popuniPolicuPilinzima(kutijaPilinga);
+    /*Ne moze jer je vec popunjeno*/
+    polica.popuniPolicuSamponima(kutijaSampona);
+    polica.popuniPolicuKremama(kutijaKrema);
+    polica.popuniPolicuUljima(kutijaUlja);
+    polica.popuniPolicuPilinzima(kutijaPilinga);
+    /*Po jedan proizvod*/
+    polica.dodajSamponNaPolicu(100,250,false,"Head&Shoulders");
+    polica.dodajKremuNaPolicu(100,250,true,"Nivea");
+    polica.dodajUljeNaPolicu(100,250,true,"LosionZaTelo");
+    polica.dodajPilingNaPolicu(100,250,false,"Vanila");
+    /*Ne moze jer je vec popunjeno*/
+    polica.popuniPolicuSamponima(kutijaSampona);
+    polica.popuniPolicuKremama(kutijaKrema);
+    polica.popuniPolicuUljima(kutijaUlja);
+    polica.popuniPolicuPilinzima(kutijaPilinga);
+    /*Popunjavanje kase*/
+    kasa.kolicinaRobe(polica);
+    kasa.vrednostRobe(polica);
+    cout<<"Vrednost robe na policama je "    <<kasa.getTrenutnaVrednostRobe()<<endl;
+    cout<<"Kolicina artikala na policama je "<<kasa.getTrenutnaKolicinaRobe()<<endl;
+    /*Ispis polica*/
+    polica.ispisiSveSampone();
+    polica.ispisiSveKreme();
+    polica.ispisiSvaUlja();
+    polica.ispisiSvePilinge();
+    /*Trazenje na policama*/
+    polica.nadjiMuskeSampone();
+    polica.nadjiMuskeKreme();
+    polica.nadjiZenskaUlja();
+    polica.nadjiZenskePilinge();
+    /*Brisanje jednog artikla sa police*/
+    polica.izbrisiSamponSaPolice(2);
+    polica.izbrisiSamponSaPolice(22);
+    polica.izbrisiKremuSaPolice(3);
+    polica.izbrisiKremuSaPolice(33);
+    polica.izbrisiUljeSaPolice(1);
+    polica.izbrisiUljeSaPolice(11);
+    polica.izbrisiPilingSaPolice(5);
+    polica.izbrisiPilingSaPolice(55);
+    /*Popunjavanje kase*/
+    kasa.kolicinaRobe(polica);
+    kasa.vrednostRobe(polica);
+    cout<<"Vrednost robe na policama je "    <<kasa.getTrenutnaVrednostRobe()<<endl;
+    cout<<"Kolicina artikala na policama je "<<kasa.getTrenutnaKolicinaRobe()<<endl;
+    /*Praznjenje cele police*/
+    polica.isprazniPolicuSampona();
+    polica.isprazniPolicuKrema();
+    polica.isprazniPolicuUlja();
+    polica.isprazniPolicuPilinga();
+    /*Trazenje na policama*/
+    polica.nadjiMuskeSampone();
+    polica.nadjiMuskeKreme();
+    polica.nadjiZenskaUlja();
+    polica.nadjiZenskePilinge();
+    /*Ispis polica*/
+    polica.ispisiSveSampone();
+    polica.ispisiSveKreme();
+    polica.ispisiSvaUlja();
+    polica.ispisiSvePilinge();
+    /*Popunjavanje kase*/
+    kasa.kolicinaRobe(polica);
+    kasa.vrednostRobe(polica);
+    cout<<"Vrednost robe na policama je "    <<kasa.getTrenutnaVrednostRobe()<<endl;
+    cout<<"Kolicina artikala na policama je "<<kasa.getTrenutnaKolicinaRobe()<<endl;
     return 0;
 }
