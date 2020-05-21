@@ -20,7 +20,7 @@ void Polica::popuniPolicuSamponima(Kutija k1)
     }
     else
     {
-        cout<<"U polici vec ima "<<vectorSampona.size()<<" sampona"<<endl;
+        cout<<"Kutija se moze dodati samo na praznu policu,a u polici vec ima "<<vectorSampona.size()<<" sampona"<<endl;
     }
 }
 void Polica::isprazniPolicuSampona()
@@ -87,7 +87,7 @@ void Polica::popuniPolicuKremama(Kutija k2)
     }
     else
     {
-        cout<<"U polici vec ima "<<vectorKrema.size()<<" krema"<<endl;
+        cout<<"Kutija se moze dodati samo na praznu policu,a u polici vec ima "<<vectorKrema.size()<<" krema"<<endl;
     }
 }
 void Polica::isprazniPolicuKrema()
@@ -154,7 +154,7 @@ void Polica::popuniPolicuUljima(Kutija k3)
     }
     else
     {
-        cout<<"U polici vec ima "<<vectorUlja.size()<<" ulja"<<endl;
+        cout<<"Kutija se moze dodati samo na praznu policu,a u polici vec ima "<<vectorUlja.size()<<" ulja"<<endl;
     }
 }
 void Polica::isprazniPolicuUlja()
@@ -221,7 +221,7 @@ void Polica::popuniPolicuPilinzima(Kutija k4)
     }
     else
     {
-        cout<<"U polici vec ima "<<vectorPilinga.size()<<" pilinga"<<endl;
+        cout<<"Kutija se moze dodati samo na praznu policu,a u polici vec ima "<<vectorPilinga.size()<<" pilinga"<<endl;
     }
 }
 void Polica::isprazniPolicuPilinga()

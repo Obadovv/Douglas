@@ -8,6 +8,10 @@ KasaDouglas::KasaDouglas()
     kolicinaKrema        = 0;
     kolicinaUlja         = 0;
     kolicinaPilinga      = 0;
+    vrednostSampona      = 0;
+    vrednostKrema        = 0;
+    vrednostUlja         = 0;
+    vrednostPilinga      = 0;
     //ctor
 }
 void KasaDouglas::kolicinaRobe(Polica polica)

@@ -8,85 +8,58 @@
 #include "piling.hpp"
 #include "polica.hpp"
 #include "kasadouglas.hpp"
-
+#include "izvestaj.hpp"
 int main()
 {
-
-    Kutija kutijaSampona = {5,200,100,true, "ProtivPeruti"};
-    Kutija kutijaKrema   = {5,200,100,false,"ProtivBora"};
-    Kutija kutijaUlja    = {5,200,100,false,"ZaMasazu"};
-    Kutija kutijaPilinga = {5,200,100,true, "Cokolada"};
-
-    Polica polica;
+    Izvestaj izvestajDouglas;
     KasaDouglas kasa;
-    /*Pocetno popunjavanje*/
-    polica.popuniPolicuSamponima(kutijaSampona);
-    polica.popuniPolicuKremama(kutijaKrema);
-    polica.popuniPolicuUljima(kutijaUlja);
-    polica.popuniPolicuPilinzima(kutijaPilinga);
-    /*Ne moze jer je vec popunjeno*/
-    polica.popuniPolicuSamponima(kutijaSampona);
-    polica.popuniPolicuKremama(kutijaKrema);
-    polica.popuniPolicuUljima(kutijaUlja);
-    polica.popuniPolicuPilinzima(kutijaPilinga);
-    /*Po jedan proizvod*/
-    polica.dodajSamponNaPolicu(100,250,false,"Head&Shoulders");
-    polica.dodajKremuNaPolicu(100,250,true,"Nivea");
-    polica.dodajUljeNaPolicu(100,250,true,"LosionZaTelo");
-    polica.dodajPilingNaPolicu(100,250,false,"Vanila");
-    /*Ne moze jer je vec popunjeno*/
-    polica.popuniPolicuSamponima(kutijaSampona);
-    polica.popuniPolicuKremama(kutijaKrema);
-    polica.popuniPolicuUljima(kutijaUlja);
-    polica.popuniPolicuPilinzima(kutijaPilinga);
-    /*Popunjavanje kase*/
-    kasa.kolicinaRobe(polica);
-    kasa.vrednostRobe(polica);
-    cout<<"Vrednost robe na policama je "    <<kasa.getTrenutnaVrednostRobe()<<endl;
-    cout<<"Kolicina artikala na policama je "<<kasa.getTrenutnaKolicinaRobe()<<endl;
-    /*Ispis polica*/
-    polica.ispisiSveSampone();
-    polica.ispisiSveKreme();
-    polica.ispisiSvaUlja();
-    polica.ispisiSvePilinge();
-    /*Trazenje na policama*/
-    polica.nadjiMuskeSampone();
-    polica.nadjiMuskeKreme();
-    polica.nadjiZenskaUlja();
-    polica.nadjiZenskePilinge();
-    /*Brisanje jednog artikla sa police*/
-    polica.izbrisiSamponSaPolice(2);
-    polica.izbrisiSamponSaPolice(22);
-    polica.izbrisiKremuSaPolice(3);
-    polica.izbrisiKremuSaPolice(33);
-    polica.izbrisiUljeSaPolice(1);
-    polica.izbrisiUljeSaPolice(11);
-    polica.izbrisiPilingSaPolice(5);
-    polica.izbrisiPilingSaPolice(55);
-    /*Popunjavanje kase*/
-    kasa.kolicinaRobe(polica);
-    kasa.vrednostRobe(polica);
-    cout<<"Vrednost robe na policama je "    <<kasa.getTrenutnaVrednostRobe()<<endl;
-    cout<<"Kolicina artikala na policama je "<<kasa.getTrenutnaKolicinaRobe()<<endl;
-    /*Praznjenje cele police*/
-    polica.isprazniPolicuSampona();
-    polica.isprazniPolicuKrema();
-    polica.isprazniPolicuUlja();
-    polica.isprazniPolicuPilinga();
-    /*Trazenje na policama*/
-    polica.nadjiMuskeSampone();
-    polica.nadjiMuskeKreme();
-    polica.nadjiZenskaUlja();
-    polica.nadjiZenskePilinge();
-    /*Ispis polica*/
-    polica.ispisiSveSampone();
-    polica.ispisiSveKreme();
-    polica.ispisiSvaUlja();
-    polica.ispisiSvePilinge();
-    /*Popunjavanje kase*/
-    kasa.kolicinaRobe(polica);
-    kasa.vrednostRobe(polica);
-    cout<<"Vrednost robe na policama je "    <<kasa.getTrenutnaVrednostRobe()<<endl;
-    cout<<"Kolicina artikala na policama je "<<kasa.getTrenutnaKolicinaRobe()<<endl;
+    Kasa *ptr_kasa = &kasa;
+    ucitajSpisak pocetnoStanje;
+    pocetnoStanje.ucitajSve("Ulaz");
+
+    ptr_kasa->kolicinaRobe(pocetnoStanje.polica);
+    ptr_kasa->vrednostRobe(pocetnoStanje.polica);
+
+    izvestajDouglas.zapocniDan(kasa);
+
+    int ulaz;
+    /**Simulacija kupovine*/
+    do
+    {
+        cout<<"Dobrodosli u Douglas"<<endl;
+        cout<<"1. Kupi Sampon"<<endl;
+        cout<<"2. Kupi Kremu"<<endl;
+        cout<<"3. Kupi Ulje"<<endl;
+        cout<<"4. Kupi Piling"<<endl;
+        cout<<"5. Zakljuci dan"<<endl;
+        /**Zbog cega se ovde zavrti vise puta while petlja ako unesem neki karakter? Npr. A*/
+        cin>>ulaz;
+        if (isdigit(ulaz))
+        {
+            cout<<"Nije unet broj!"<<endl;
+        }
+        else
+        {
+            if(ulaz < 1 || ulaz > 5)
+            {
+                cout<<"Unet broj manji od 1 a veci od 5"<<endl;
+            }
+            else
+            {
+                 switch(ulaz)
+                {
+                    case(1):pocetnoStanje.polica.izbrisiSamponSaPolice(1); break;
+                    case(2):pocetnoStanje.polica.izbrisiKremuSaPolice (1); break;
+                    case(3):pocetnoStanje.polica.izbrisiUljeSaPolice  (1); break;
+                    case(4):pocetnoStanje.polica.izbrisiPilingSaPolice(1); break;
+                    case(5):ptr_kasa->kolicinaRobe(pocetnoStanje.polica);
+                            ptr_kasa->vrednostRobe(pocetnoStanje.polica);
+                            izvestajDouglas.zavrsiDan(kasa); break;
+                    default:break;
+                }
+            }
+        }
+    }while(ulaz != 5);
+
     return 0;
 }

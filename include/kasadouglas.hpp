@@ -3,7 +3,7 @@
 #include "proizvod.hpp"
 #include "kasa.hpp"
 #include "polica.hpp"
-
+#include <fstream>
 
 class KasaDouglas : public Kasa
 {
@@ -30,8 +30,8 @@ class KasaDouglas : public Kasa
         void setTrenutnaVrednostRobe  (int val) { trenutnaVrednostRobe = val; }
         void setTrenutnaKolicinaRobe  (int val) { trenutnaKolicinaRobe = val; }
 
-        void kolicinaRobe  (Polica polica);
-        void vrednostRobe  (Polica polica);
+        void kolicinaRobe  (Polica);
+        void vrednostRobe  (Polica);
 
     private:
         vector<Sampon>::iterator itSampon;

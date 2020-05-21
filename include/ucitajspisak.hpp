@@ -6,17 +6,21 @@
 #include <fstream>
 #include<iostream>
 
+#include "polica.hpp"
 using namespace std;
 
 class ucitajSpisak
 {
     public:
         ucitajSpisak();
-        void ucitajSve();
+        Polica polica;
+
         void ispisiSampone();
         void ispisiKreme();
         void ispisiUlja();
         void ispisiPilinge();
+        void ucitajSve(string);
+        void dodajKutijuNaPolicu(Kutija,string);
     private:
         int  kolicinaSampona;
         int  kolicinaKrema;

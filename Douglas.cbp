@@ -36,18 +36,24 @@
 		</Compiler>
 		<Unit filename="Ulaz" />
 		<Unit filename="include/akcija.hpp" />
+		<Unit filename="include/kasa.hpp" />
+		<Unit filename="include/kasadouglas.hpp" />
 		<Unit filename="include/krema.hpp" />
 		<Unit filename="include/piling.hpp" />
 		<Unit filename="include/poklonpaket.hpp" />
+		<Unit filename="include/polica.hpp" />
 		<Unit filename="include/proizvod.hpp" />
 		<Unit filename="include/sampon.h" />
 		<Unit filename="include/ucitajspisak.hpp" />
 		<Unit filename="include/ulje.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/akcija.cpp" />
+		<Unit filename="src/kasa.cpp" />
+		<Unit filename="src/kasadouglas.cpp" />
 		<Unit filename="src/krema.cpp" />
 		<Unit filename="src/piling.cpp" />
 		<Unit filename="src/poklonpaket.cpp" />
+		<Unit filename="src/polica.cpp" />
 		<Unit filename="src/sampon.cpp" />
 		<Unit filename="src/ucitajspisak.cpp" />
 		<Unit filename="src/ulje.cpp" />
