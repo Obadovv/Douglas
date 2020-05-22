@@ -16,11 +16,13 @@ class Izvestaj
         void   setPocetnaKolicinaRobe (int val){ pocetnaKolicinaRobe = val; }
         void   setPocetnaVrednostRobe (int val){ pocetnaVrednostRobe = val; }
 
+        void   uvecajPocetnuKolicinuRobe (int val){ pocetnaKolicinaRobe += val; }
+        void   uvecajPocetnuVrednostRobe (int val){ pocetnaVrednostRobe += val; }
+
         int    getKrajnjaKolicinaRobe () const { return krajnjaKolicinaRobe;}
         int    getKrajnjaVrednostRobe () const { return krajnjaVrednostRobe;}
         void   setKrajnjaKolicinaRobe (int val){ krajnjaKolicinaRobe = val; }
         void   setKrajnjaVrednostRobe (int val){ krajnjaVrednostRobe = val; }
-
 
     private:
         int pocetnaKolicinaRobe;

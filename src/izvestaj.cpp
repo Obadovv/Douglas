@@ -32,6 +32,7 @@ void Izvestaj::zapocniDan(KasaDouglas kasa)
 }
 void Izvestaj::zavrsiDan(KasaDouglas kasa)
 {
+    /**U finalnoj verziji projekta cu dodati opciju da se u krajnje stanje upise da li je radjena nabavka u toku dana*/
     setKrajnjaKolicinaRobe(kasa.getTrenutnaKolicinaRobe());
     setKrajnjaVrednostRobe(kasa.getTrenutnaVrednostRobe());
     zavrsnoStanje.open("zavrsnoStanje.txt");

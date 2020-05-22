@@ -67,12 +67,13 @@ void Polica::izbrisiSamponSaPolice(int pozicija)
 {
     if((pozicija < 0) || ((int)vectorSampona.size()< pozicija))
     {
-        cout<<"Nije moguce obrisati sampon sa pozicije "<<pozicija<<endl;
+        cout<<"Nemamo sampon na toj poziciji"<<endl;
     }
     else
     {
         vectorSampona.erase(vectorSampona.begin()+pozicija-1);
-        cout<<"Obrisan je sampon sa pozicije "<<pozicija<<endl;
+        /**Ovde cu dodati jos detalja o ispisu u finalnoj izradi*/
+        cout<<"Prodat je sampon sa pozicije "<<pozicija<<endl;
     }
 }
 /*KREMA*/
@@ -134,12 +135,13 @@ void Polica::izbrisiKremuSaPolice(int pozicija)
 {
     if((pozicija < 0) || ((int)vectorKrema.size()< pozicija))
     {
-        cout<<"Nije moguce obrisati kremu sa pozicije "<<pozicija<<endl;
+        cout<<"Nemamo kremu na toj poziciji"<<pozicija<<endl;
     }
     else
     {
+        /**Ovde cu dodati jos detalja o ispisu u finalnoj izradi*/
         vectorKrema.erase(vectorKrema.begin()+pozicija-1);
-        cout<<"Obrisana je krema sa pozicije "<<pozicija<<endl;
+        cout<<"Prodata je krema sa pozicije "<<pozicija<<endl;
     }
 }
 /*ULJE*/
@@ -201,12 +203,13 @@ void Polica::izbrisiUljeSaPolice(int pozicija)
 {
     if((pozicija < 0) || ((int)vectorUlja.size()< pozicija))
     {
-        cout<<"Nije moguce obrisati ulje sa pozicije "<<pozicija<<endl;
+        cout<<"Nemamo ulje na toj poziciji "<<pozicija<<endl;
     }
     else
     {
+        /**Ovde cu dodati jos detalja o ispisu u finalnoj izradi*/
         vectorUlja.erase(vectorUlja.begin()+pozicija-1);
-        cout<<"Obrisano je ulje sa pozicije "<<pozicija<<endl;
+        cout<<"Prodato je ulje sa pozicije "<<pozicija<<endl;
     }
 }
 /*PILING*/
@@ -268,12 +271,13 @@ void Polica::izbrisiPilingSaPolice(int pozicija)
 {
     if((pozicija < 0) || ((int)vectorPilinga.size()< pozicija))
     {
-        cout<<"Nije moguce obrisati piling sa pozicije "<<pozicija<<endl;
+        cout<<"Nemamo piling na poziciji "<<pozicija<<endl;
     }
     else
     {
+        /**Ovde cu dodati jos detalja o ispisu u finalnoj izradi*/
         vectorPilinga.erase(vectorPilinga.begin()+pozicija-1);
-        cout<<"Obrisan je piling sa pozicije "<<pozicija<<endl;
+        cout<<"Prodat je piling sa pozicije "<<pozicija<<endl;
     }
 }
 Polica::~Polica()
