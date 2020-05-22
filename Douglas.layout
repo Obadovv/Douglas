@@ -2,9 +2,25 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
+<<<<<<< HEAD
 	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="409" topLine="22" />
+=======
+	<File name="src\piling.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="531" topLine="3" />
+		</Cursor>
+	</File>
+	<File name="include\proizvod.hpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="313" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\kasadouglas.hpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2121" topLine="25" />
+>>>>>>> 7f71110e082d1edac9508d1952c07d6944a4fdab
 		</Cursor>
 	</File>
 	<File name="src\krema.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -12,24 +28,7 @@
 			<Cursor1 position="538" topLine="4" />
 		</Cursor>
 	</File>
-	<File name="src\sampon.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="540" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="3" />
-			<Collapse line="11" />
-			<Collapse line="34" />
-			<Collapse line="38" />
-			<Collapse line="44" />
-		</Folding>
-	</File>
-	<File name="include\poklonpaket.hpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="254" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\akcija.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\akcija.cpp" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="23" topLine="0" />
 		</Cursor>
@@ -41,11 +40,36 @@
 			<Collapse line="60" />
 		</Folding>
 	</File>
+<<<<<<< HEAD
+	<File name="include\poklonpaket.hpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="254" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\akcija.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+=======
+	<File name="src\ulje.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="535" topLine="5" />
+		</Cursor>
+	</File>
 	<File name="include\akcija.hpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="193" topLine="0" />
 		</Cursor>
 	</File>
+	<File name="include\ulje.hpp" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+>>>>>>> 7f71110e082d1edac9508d1952c07d6944a4fdab
+		<Cursor>
+			<Cursor1 position="769" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\akcija.hpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="193" topLine="0" />
+		</Cursor>
+	</File>
+<<<<<<< HEAD
 	<File name="src\kasadouglas.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="1292" topLine="17" />
@@ -62,7 +86,24 @@
 	<File name="src\kasa.cpp" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
+=======
+	<File name="include\kasa.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="196" topLine="0" />
+>>>>>>> 7f71110e082d1edac9508d1952c07d6944a4fdab
 		</Cursor>
+	</File>
+	<File name="src\sampon.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="540" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="3" />
+			<Collapse line="11" />
+			<Collapse line="34" />
+			<Collapse line="38" />
+			<Collapse line="44" />
+		</Folding>
 	</File>
 	<File name="include\sampon.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
@@ -120,14 +161,42 @@
 			<Collapse line="279" />
 		</Folding>
 	</File>
-	<File name="include\kasa.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\ucitajspisak.cpp" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
 		<Cursor>
+<<<<<<< HEAD
 			<Cursor1 position="268" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="src\ucitajspisak.cpp" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="191" topLine="2" />
+=======
+			<Cursor1 position="1450" topLine="4" />
+		</Cursor>
+		<Folding>
+			<Collapse line="25" />
+			<Collapse line="29" />
+			<Collapse line="33" />
+			<Collapse line="39" />
+			<Collapse line="52" />
+			<Collapse line="56" />
+			<Collapse line="60" />
+			<Collapse line="64" />
+			<Collapse line="77" />
+			<Collapse line="81" />
+			<Collapse line="142" />
+			<Collapse line="163" />
+		</Folding>
+	</File>
+	<File name="include\poklonpaket.hpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="254" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="main.cpp" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="283" topLine="5" />
+>>>>>>> 7f71110e082d1edac9508d1952c07d6944a4fdab
 		</Cursor>
 		<Folding>
 			<Collapse line="3" />
@@ -145,9 +214,9 @@
 			<Collapse line="141" />
 		</Folding>
 	</File>
-	<File name="include\ulje.hpp" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\poklonpaket.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="769" topLine="0" />
+			<Cursor1 position="28" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="include\krema.hpp" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -155,16 +224,23 @@
 			<Cursor1 position="787" topLine="0" />
 		</Cursor>
 	</File>
+<<<<<<< HEAD
 	<File name="src\piling.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="531" topLine="3" />
-		</Cursor>
-	</File>
-	<File name="src\poklonpaket.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+=======
+	<File name="include\piling.hpp" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="28" topLine="0" />
+			<Cursor1 position="796" topLine="0" />
+>>>>>>> 7f71110e082d1edac9508d1952c07d6944a4fdab
 		</Cursor>
 	</File>
+	<File name="Ulaz" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="124" topLine="0" />
+		</Cursor>
+	</File>
+<<<<<<< HEAD
 	<File name="Ulaz" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="124" topLine="0" />
@@ -173,6 +249,11 @@
 	<File name="src\ulje.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="535" topLine="5" />
+=======
+	<File name="src\kasadouglas.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1707" topLine="36" />
+>>>>>>> 7f71110e082d1edac9508d1952c07d6944a4fdab
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>
