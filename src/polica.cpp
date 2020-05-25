@@ -45,35 +45,36 @@ void Polica::ispisiSveSampone()
         }
     }
 }
-void Polica::nadjiMuskeSampone()
+int Polica::nadjiSampon(bool pol)
 {
     if(vectorSampona.empty())
     {
-        cout<<"Nema sampona!!!"<<endl;
+        cout<<"Nema sampona na polici!!!"<<endl;
     }
     else
     {
         for(auto it = vectorSampona.begin(); it!=vectorSampona.end(); it++)
         {
-            if(it->getPol() == false)
+            if(it->getPol() == pol)
             {
-                cout<<"Nadjen muski sampon"<<endl;
-                cout<<*it;
+                cout<<"Nadjen sampon"<<endl;
+                return std::distance(vectorSampona.begin(), it);
             }
         }
     }
+    return -1;
 }
 void Polica::izbrisiSamponSaPolice(int pozicija)
 {
     if((pozicija < 0) || ((int)vectorSampona.size()< pozicija))
     {
-        cout<<"Nemamo sampon na toj poziciji"<<endl;
+        cout<<"Nemamo trazenih sampona vise"<<endl;
     }
     else
     {
-        vectorSampona.erase(vectorSampona.begin()+pozicija-1);
-        /**Ovde cu dodati jos detalja o ispisu u finalnoj izradi*/
-        cout<<"Prodat je sampon sa pozicije "<<pozicija<<endl;
+        cout<<"Prodat je sampon sa pozicije "<<pozicija + 1<<endl;
+        cout<<vectorSampona.at(pozicija);
+        vectorSampona.erase(vectorSampona.begin()+pozicija);
     }
 }
 /*KREMA*/
@@ -113,7 +114,7 @@ void Polica::ispisiSveKreme()
         }
     }
 }
-void Polica::nadjiMuskeKreme()
+int Polica::nadjiKremu(bool pol)
 {
     if(vectorKrema.empty())
     {
@@ -123,25 +124,26 @@ void Polica::nadjiMuskeKreme()
     {
         for(auto it = vectorKrema.begin(); it!=vectorKrema.end(); it++)
         {
-            if(it->getPol() == false)
+            if(it->getPol() == pol)
             {
-                cout<<"Nadjena muska krema"<<endl;
-                cout<<*it;
+                cout<<"Nadjena krema"<<endl;
+                return std::distance(vectorKrema.begin(), it);
             }
         }
     }
+    return -1;
 }
 void Polica::izbrisiKremuSaPolice(int pozicija)
 {
     if((pozicija < 0) || ((int)vectorKrema.size()< pozicija))
     {
-        cout<<"Nemamo kremu na toj poziciji"<<pozicija<<endl;
+        cout<<"Nemamo trazenih krema vise"<<endl;
     }
     else
     {
-        /**Ovde cu dodati jos detalja o ispisu u finalnoj izradi*/
-        vectorKrema.erase(vectorKrema.begin()+pozicija-1);
-        cout<<"Prodata je krema sa pozicije "<<pozicija<<endl;
+        cout<<"Prodata je krema sa pozicije "<<pozicija + 1<<endl;
+        cout<<vectorKrema.at(pozicija);
+        vectorKrema.erase(vectorKrema.begin()+pozicija);
     }
 }
 /*ULJE*/
@@ -181,7 +183,7 @@ void Polica::ispisiSvaUlja()
         }
     }
 }
-void Polica::nadjiZenskaUlja()
+int Polica::nadjiUlje(bool pol)
 {
     if(vectorUlja.empty())
     {
@@ -191,25 +193,26 @@ void Polica::nadjiZenskaUlja()
     {
         for(auto it = vectorUlja.begin(); it!=vectorUlja.end(); it++)
         {
-            if(it->getPol() == true)
+            if(it->getPol() == pol)
             {
-                cout<<"Nadjeno zensko ulje"<<endl;
-                cout<<*it;
+                cout<<"Nadjeno ulje"<<endl;
+                return std::distance(vectorUlja.begin(), it);
             }
         }
     }
+    return -1;
 }
 void Polica::izbrisiUljeSaPolice(int pozicija)
 {
     if((pozicija < 0) || ((int)vectorUlja.size()< pozicija))
     {
-        cout<<"Nemamo ulje na toj poziciji "<<pozicija<<endl;
+        cout<<"Nemamo trazenih ulja vise"<<endl;
     }
     else
     {
-        /**Ovde cu dodati jos detalja o ispisu u finalnoj izradi*/
-        vectorUlja.erase(vectorUlja.begin()+pozicija-1);
-        cout<<"Prodato je ulje sa pozicije "<<pozicija<<endl;
+        cout<<"Prodato je ulje sa pozicije "<<pozicija + 1<<endl;
+        cout<<vectorUlja.at(pozicija);
+        vectorUlja.erase(vectorUlja.begin()+pozicija);
     }
 }
 /*PILING*/
@@ -249,35 +252,36 @@ void Polica::ispisiSvePilinge()
         }
     }
 }
-void Polica::nadjiZenskePilinge()
+int Polica::nadjiPiling(bool pol)
 {
     if(vectorPilinga.empty())
     {
-        cout<<"Nema ulja!!!"<<endl;
+        cout<<"Nema pilinga!!!"<<endl;
     }
     else
     {
         for(auto it = vectorPilinga.begin(); it!=vectorPilinga.end(); it++)
         {
-            if(it->getPol() == true)
+            if(it->getPol() == pol)
             {
-                cout<<"Nadjen zenski piling"<<endl;
-                cout<<*it;
+                cout<<"Nadjen piling"<<endl;
+                return std::distance(vectorPilinga.begin(), it);
             }
         }
     }
+    return -1;
 }
 void Polica::izbrisiPilingSaPolice(int pozicija)
 {
     if((pozicija < 0) || ((int)vectorPilinga.size()< pozicija))
     {
-        cout<<"Nemamo piling na poziciji "<<pozicija<<endl;
+        cout<<"Nemamo trazenih pilinga vise"<<endl;
     }
     else
     {
-        /**Ovde cu dodati jos detalja o ispisu u finalnoj izradi*/
-        vectorPilinga.erase(vectorPilinga.begin()+pozicija-1);
-        cout<<"Prodat je piling sa pozicije "<<pozicija<<endl;
+        cout<<"Prodat je piling sa pozicije "<<pozicija + 1<<endl;
+        cout<<vectorPilinga.at(pozicija);
+        vectorPilinga.erase(vectorPilinga.begin()+pozicija);
     }
 }
 Polica::~Polica()

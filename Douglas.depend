@@ -169,7 +169,7 @@
 	<fstream>
 	<iostream>
 
-1588713597 source:c:\users\mia\desktop\douglas-master\main.cpp
+1590446718 source:c:\users\mia\desktop\douglas-master\main.cpp
 	"poklonpaket.hpp"
 	"akcija.hpp"
 	"ucitajspisak.hpp"
@@ -178,61 +178,67 @@
 	"ulje.hpp"
 	"krema.hpp"
 	"piling.hpp"
+	"polica.hpp"
+	"kasadouglas.hpp"
+	"izvestaj.hpp"
 
-1588198749 c:\users\mia\desktop\douglas-master\include\poklonpaket.hpp
+1590188314 c:\users\mia\desktop\douglas-master\include\poklonpaket.hpp
 	"proizvod.hpp"
 	"sampon.h"
 	"krema.hpp"
 	"ulje.hpp"
 	"piling.hpp"
 
-1588198749 c:\users\mia\desktop\douglas-master\include\proizvod.hpp
+1590188314 c:\users\mia\desktop\douglas-master\include\proizvod.hpp
+	<iostream>
 	<string>
 
-1588198749 c:\users\mia\desktop\douglas-master\include\sampon.h
+1590188314 c:\users\mia\desktop\douglas-master\include\sampon.h
 	<Proizvod.hpp>
 
-1588198749 c:\users\mia\desktop\douglas-master\include\krema.hpp
+1590188314 c:\users\mia\desktop\douglas-master\include\krema.hpp
 	<Proizvod.hpp>
 
-1588705862 c:\users\mia\desktop\douglas-master\include\ulje.hpp
+1590188314 c:\users\mia\desktop\douglas-master\include\ulje.hpp
 	<Proizvod.hpp>
 
-1588198749 c:\users\mia\desktop\douglas-master\include\piling.hpp
+1590188314 c:\users\mia\desktop\douglas-master\include\piling.hpp
 	<Proizvod.hpp>
 
-1588198749 c:\users\mia\desktop\douglas-master\include\akcija.hpp
+1590339173 c:\users\mia\desktop\douglas-master\include\akcija.hpp
 	"proizvod.hpp"
 	"sampon.h"
 	"krema.hpp"
 	"ulje.hpp"
 	"piling.hpp"
+	"vector"
 
-1588715370 c:\users\mia\desktop\douglas-master\include\ucitajspisak.hpp
+1590188314 c:\users\mia\desktop\douglas-master\include\ucitajspisak.hpp
 	<string>
 	<sstream>
 	<fstream>
 	<iostream>
+	"polica.hpp"
 
-1588198749 source:c:\users\mia\desktop\douglas-master\src\akcija.cpp
+1590337153 source:c:\users\mia\desktop\douglas-master\src\akcija.cpp
 	"akcija.hpp"
 
-1588198749 source:c:\users\mia\desktop\douglas-master\src\krema.cpp
+1590188314 source:c:\users\mia\desktop\douglas-master\src\krema.cpp
 	"krema.hpp"
 
-1588198749 source:c:\users\mia\desktop\douglas-master\src\piling.cpp
+1590188314 source:c:\users\mia\desktop\douglas-master\src\piling.cpp
 	"piling.hpp"
 
-1588198749 source:c:\users\mia\desktop\douglas-master\src\poklonpaket.cpp
+1590188314 source:c:\users\mia\desktop\douglas-master\src\poklonpaket.cpp
 	"poklonpaket.hpp"
 
-1588198749 source:c:\users\mia\desktop\douglas-master\src\sampon.cpp
+1590188314 source:c:\users\mia\desktop\douglas-master\src\sampon.cpp
 	"sampon.h"
 
-1588198749 source:c:\users\mia\desktop\douglas-master\src\ulje.cpp
+1590188314 source:c:\users\mia\desktop\douglas-master\src\ulje.cpp
 	"ulje.hpp"
 
-1588715214 source:c:\users\mia\desktop\douglas-master\src\ucitajspisak.cpp
+1590188314 source:c:\users\mia\desktop\douglas-master\src\ucitajspisak.cpp
 	"ucitajspisak.hpp"
 
 1588715882 source:c:\users\mia\desktop\gittest\douglas\main.cpp
@@ -440,7 +446,8 @@
 	"piling.hpp"
 	"polica.hpp"
 	"kasadouglas.hpp"
-<<<<<<< HEAD
+
+1590187521 D
 	"poklonpaket.hpp"
 	"akcija.hpp"
 	"ucitajspisak.hpp"
@@ -451,9 +458,18 @@
 	"piling.hpp"
 	"polica.hpp"
 	"kasadouglas.hpp"
-=======
+	<string>
+	<sstream>
+	<fstream>
+	<iostream>
+	"proizvod.hpp"
+	"kasa.hpp"
+	"polica.hpp"
+
+1590100448 as.hpp"
 	"izvestaj.hpp"
->>>>>>> 7f71110e082d1edac9508d1952c07d6944a4fdab
+
+1590100448 1110e082d1edac9508d1952c07d6944a4fdab
 
 1590100448 c:\users\mia\desktop\test\douglas\include\poklonpaket.hpp
 	"proizvod.hpp"
@@ -506,14 +522,9 @@
 	<sstream>
 	<fstream>
 	<iostream>
-<<<<<<< HEAD
-	<string>
-	<sstream>
-	<fstream>
-	<iostream>
-=======
+
+1590100448 
 	"polica.hpp"
->>>>>>> 7f71110e082d1edac9508d1952c07d6944a4fdab
 
 1590100448 c:\users\mia\desktop\test\douglas\include\polica.hpp
 	<vector>
@@ -535,13 +546,9 @@
 	"proizvod.hpp"
 	"kasa.hpp"
 	"polica.hpp"
-<<<<<<< HEAD
-	"proizvod.hpp"
-	"kasa.hpp"
-	"polica.hpp"
-=======
+
+1590100448 p"
 	<fstream>
->>>>>>> 7f71110e082d1edac9508d1952c07d6944a4fdab
 
 1590100448 c:\users\mia\desktop\test\douglas\include\kasa.hpp
 	"polica.hpp"
@@ -575,7 +582,7 @@
 	"ulje.hpp"
 	"ulje.hpp"
 
-1590089201 source:c:\users\stasa&dijana\desktop\douglas-master\main.cpp
+1590434182 source:c:\users\stasa&dijana\desktop\douglas-master\main.cpp
 	"poklonpaket.hpp"
 	"akcija.hpp"
 	"ucitajspisak.hpp"
@@ -588,44 +595,45 @@
 	"kasadouglas.hpp"
 	"izvestaj.hpp"
 
-1589655401 c:\users\stasa&dijana\desktop\douglas-master\include\poklonpaket.hpp
+1590184714 c:\users\stasa&dijana\desktop\douglas-master\include\poklonpaket.hpp
 	"proizvod.hpp"
 	"sampon.h"
 	"krema.hpp"
 	"ulje.hpp"
 	"piling.hpp"
 
-1589655401 c:\users\stasa&dijana\desktop\douglas-master\include\proizvod.hpp
+1590184714 c:\users\stasa&dijana\desktop\douglas-master\include\proizvod.hpp
 	<iostream>
 	<string>
 
-1589655401 c:\users\stasa&dijana\desktop\douglas-master\include\sampon.h
+1590184714 c:\users\stasa&dijana\desktop\douglas-master\include\sampon.h
 	<Proizvod.hpp>
 
-1589655401 c:\users\stasa&dijana\desktop\douglas-master\include\krema.hpp
+1590184714 c:\users\stasa&dijana\desktop\douglas-master\include\krema.hpp
 	<Proizvod.hpp>
 
-1589655401 c:\users\stasa&dijana\desktop\douglas-master\include\ulje.hpp
+1590184714 c:\users\stasa&dijana\desktop\douglas-master\include\ulje.hpp
 	<Proizvod.hpp>
 
-1589655401 c:\users\stasa&dijana\desktop\douglas-master\include\piling.hpp
+1590184714 c:\users\stasa&dijana\desktop\douglas-master\include\piling.hpp
 	<Proizvod.hpp>
 
-1589655401 c:\users\stasa&dijana\desktop\douglas-master\include\akcija.hpp
+1590335573 c:\users\stasa&dijana\desktop\douglas-master\include\akcija.hpp
 	"proizvod.hpp"
 	"sampon.h"
 	"krema.hpp"
 	"ulje.hpp"
 	"piling.hpp"
+	"vector"
 
-1590081230 c:\users\stasa&dijana\desktop\douglas-master\include\ucitajspisak.hpp
+1590184714 c:\users\stasa&dijana\desktop\douglas-master\include\ucitajspisak.hpp
 	<string>
 	<sstream>
 	<fstream>
 	<iostream>
 	"polica.hpp"
 
-1589655401 c:\users\stasa&dijana\desktop\douglas-master\include\polica.hpp
+1590331152 c:\users\stasa&dijana\desktop\douglas-master\include\polica.hpp
 	<vector>
 	<algorithm>
 	"proizvod.hpp"
@@ -634,53 +642,51 @@
 	"ulje.hpp"
 	"piling.hpp"
 
-1590083140 c:\users\stasa&dijana\desktop\douglas-master\include\kasadouglas.hpp
+1590184714 c:\users\stasa&dijana\desktop\douglas-master\include\kasadouglas.hpp
 	"proizvod.hpp"
 	"kasa.hpp"
 	"polica.hpp"
 	<fstream>
 
-1590005035 c:\users\stasa&dijana\desktop\douglas-master\include\kasa.hpp
+1590184714 c:\users\stasa&dijana\desktop\douglas-master\include\kasa.hpp
 	"polica.hpp"
 
-1589655401 source:c:\users\stasa&dijana\desktop\douglas-master\src\akcija.cpp
+1590333553 source:c:\users\stasa&dijana\desktop\douglas-master\src\akcija.cpp
 	"akcija.hpp"
 
-1589655401 source:c:\users\stasa&dijana\desktop\douglas-master\src\kasa.cpp
+1590184714 source:c:\users\stasa&dijana\desktop\douglas-master\src\kasa.cpp
 	"kasa.hpp"
 	"polica.hpp"
 	"proizvod.hpp"
 
-1590081924 source:c:\users\stasa&dijana\desktop\douglas-master\src\kasadouglas.cpp
+1590184714 source:c:\users\stasa&dijana\desktop\douglas-master\src\kasadouglas.cpp
 	"kasadouglas.hpp"
 
-1589655401 source:c:\users\stasa&dijana\desktop\douglas-master\src\krema.cpp
+1590184714 source:c:\users\stasa&dijana\desktop\douglas-master\src\krema.cpp
 	"krema.hpp"
 
-1589655401 source:c:\users\stasa&dijana\desktop\douglas-master\src\piling.cpp
+1590184714 source:c:\users\stasa&dijana\desktop\douglas-master\src\piling.cpp
 	"piling.hpp"
 
-1589655401 source:c:\users\stasa&dijana\desktop\douglas-master\src\poklonpaket.cpp
+1590184714 source:c:\users\stasa&dijana\desktop\douglas-master\src\poklonpaket.cpp
 	"poklonpaket.hpp"
 
-1590086282 source:c:\users\stasa&dijana\desktop\douglas-master\src\polica.cpp
+1590340012 source:c:\users\stasa&dijana\desktop\douglas-master\src\polica.cpp
 	"polica.hpp"
 
-1590086282 D
-
-1589655401 source:c:\users\stasa&dijana\desktop\douglas-master\src\sampon.cpp
+1590184714 source:c:\users\stasa&dijana\desktop\douglas-master\src\sampon.cpp
 	"sampon.h"
 
-1590081806 source:c:\users\stasa&dijana\desktop\douglas-master\src\ucitajspisak.cpp
+1590184714 source:c:\users\stasa&dijana\desktop\douglas-master\src\ucitajspisak.cpp
 	"ucitajspisak.hpp"
 
-1589655401 source:c:\users\stasa&dijana\desktop\douglas-master\src\ulje.cpp
+1590184714 source:c:\users\stasa&dijana\desktop\douglas-master\src\ulje.cpp
 	"ulje.hpp"
 
-1590088668 source:c:\users\stasa&dijana\desktop\douglas-master\src\izvestaj.cpp
+1590341644 source:c:\users\stasa&dijana\desktop\douglas-master\src\izvestaj.cpp
 	"izvestaj.hpp"
 
-1590084274 c:\users\stasa&dijana\desktop\douglas-master\include\izvestaj.hpp
+1590341633 c:\users\stasa&dijana\desktop\douglas-master\include\izvestaj.hpp
 	<fstream>
 	"kasadouglas.hpp"
 
@@ -690,12 +696,6 @@
 
 1590187521 source:c:\users\mia\desktop\douglas\src\izvestaj.cpp
 	"izvestaj.hpp"
-<<<<<<< HEAD
-
-1590092268 hpp"
-
-1589658575 e8de3c8bdff020dd3114151e8ab54199de5b9
-=======
 
 1590092268 hpp"
 
@@ -715,5 +715,40 @@
 
 1590100448 source:c:\users\mia\desktop\test\douglas\src\polica.cpp
 	"polica.hpp"
->>>>>>> 7f71110e082d1edac9508d1952c07d6944a4fdab
+
+1590334752 c:\users\mia\desktop\douglas-master\include\polica.hpp
+	<vector>
+	<algorithm>
+	"proizvod.hpp"
+	"sampon.h"
+	"krema.hpp"
+	"ulje.hpp"
+	"piling.hpp"
+
+1590188314 c:\users\mia\desktop\douglas-master\include\kasadouglas.hpp
+	"proizvod.hpp"
+	"kasa.hpp"
+	"polica.hpp"
+	<fstream>
+
+1590188314 c:\users\mia\desktop\douglas-master\include\kasa.hpp
+	"polica.hpp"
+
+1590345233 c:\users\mia\desktop\douglas-master\include\izvestaj.hpp
+	<fstream>
+	"kasadouglas.hpp"
+
+1590345244 source:c:\users\mia\desktop\douglas-master\src\izvestaj.cpp
+	"izvestaj.hpp"
+
+1590188314 source:c:\users\mia\desktop\douglas-master\src\kasa.cpp
+	"kasa.hpp"
+	"polica.hpp"
+	"proizvod.hpp"
+
+1590188314 source:c:\users\mia\desktop\douglas-master\src\kasadouglas.cpp
+	"kasadouglas.hpp"
+
+1590343612 source:c:\users\mia\desktop\douglas-master\src\polica.cpp
+	"polica.hpp"
 

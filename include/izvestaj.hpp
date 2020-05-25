@@ -10,6 +10,7 @@ class Izvestaj
         Izvestaj();
         void zapocniDan(KasaDouglas);
         void zavrsiDan(KasaDouglas);
+        void promenaUTokuDana(string);
 
         int    getPocetnaKolicinaRobe () const { return pocetnaKolicinaRobe;}
         int    getPocetnaVrednostRobe () const { return pocetnaVrednostRobe;}
@@ -30,8 +31,7 @@ class Izvestaj
         int krajnjaKolicinaRobe;
         int krajnjaVrednostRobe;
 
-        ofstream pocetnoStanje;
-        ofstream zavrsnoStanje;
+        ofstream celodnevniIzvestaj;
 
 };
 

@@ -10,50 +10,65 @@ Izvestaj::Izvestaj()
 }
 void Izvestaj::zapocniDan(KasaDouglas kasa)
 {
-    pocetnoStanje.open  ("pocetnoStanje.txt");
-    if(pocetnoStanje.is_open())
+    celodnevniIzvestaj.open  ("celodnevni_izvestaj.txt");
+    if(celodnevniIzvestaj.is_open())
     {
-        pocetnoStanje<<"***********Pocetno stanje***********"<<endl;
-        pocetnoStanje<<"1. Sampona ima " + to_string(kasa.getKolicinaSampona()) + " i njihova vrednost je " + to_string(kasa.getVrednostSampona())<<endl;
-        pocetnoStanje<<"2. Krema   ima " + to_string(kasa.getKolicinaKrema())   + " i njihova vrednost je " + to_string(kasa.getVrednostKrema())<<endl;
-        pocetnoStanje<<"3. Ulja    ima " + to_string(kasa.getKolicinaUlja())    + " i njihova vrednost je " + to_string(kasa.getVrednostUlja())<<endl;
-        pocetnoStanje<<"4. Pilinga ima " + to_string(kasa.getKolicinaPilinga()) + " i njihova vrednost je " + to_string(kasa.getVrednostPilinga())<<endl;
-        pocetnoStanje<<"5. Ukupna kolicina robe = [" + to_string(kasa.getTrenutnaKolicinaRobe()) + "] artikla"<<endl;
-        pocetnoStanje<<"6. Ukupna vrednost robe = [" + to_string(kasa.getTrenutnaVrednostRobe()) + "] artikla"<<endl;
-        pocetnoStanje.close();
+        celodnevniIzvestaj<<"***********Pocetno stanje***********"<<endl;
+        celodnevniIzvestaj<<"1. Sampona ima " + to_string(kasa.getKolicinaSampona()) + " i njihova vrednost je " + to_string(kasa.getVrednostSampona())<<endl;
+        celodnevniIzvestaj<<"2. Krema   ima " + to_string(kasa.getKolicinaKrema())   + " i njihova vrednost je " + to_string(kasa.getVrednostKrema())<<endl;
+        celodnevniIzvestaj<<"3. Ulja    ima " + to_string(kasa.getKolicinaUlja())    + " i njihova vrednost je " + to_string(kasa.getVrednostUlja())<<endl;
+        celodnevniIzvestaj<<"4. Pilinga ima " + to_string(kasa.getKolicinaPilinga()) + " i njihova vrednost je " + to_string(kasa.getVrednostPilinga())<<endl;
+        celodnevniIzvestaj<<"5. Ukupna kolicina robe = [" + to_string(kasa.getTrenutnaKolicinaRobe()) + "] artikla"<<endl;
+        celodnevniIzvestaj<<"6. Ukupna vrednost robe = [" + to_string(kasa.getTrenutnaVrednostRobe()) + "] artikla"<<endl;
+        celodnevniIzvestaj.close();
     }
     else
     {
-        cout<<"Nije moguce otvoriti fajl pocetnoStanje"<<endl;
+        cout<<"Nije moguce otvoriti fajl celodnevni_izvestaj"<<endl;
     }
 
     setPocetnaKolicinaRobe(kasa.getTrenutnaKolicinaRobe());
     setPocetnaVrednostRobe(kasa.getTrenutnaVrednostRobe());
+}
+void Izvestaj::promenaUTokuDana(string nabavka)
+{
+    /**ios::app Otvori fajl na kraju i nastavi da pises u njega*/
+    celodnevniIzvestaj.open("celodnevni_izvestaj.txt",ios::app);
+    if(celodnevniIzvestaj.is_open())
+    {
+        celodnevniIzvestaj<<"***********Promena u toku dana***********"<<endl;
+        celodnevniIzvestaj<<nabavka<<endl;
+        celodnevniIzvestaj.close ();
+    }
+    else
+    {
+        cout<<"Nije moguce otvoriti fajl celodnevni_izvestaj"<<endl;
+
+    }
 }
 void Izvestaj::zavrsiDan(KasaDouglas kasa)
 {
     /**U finalnoj verziji projekta cu dodati opciju da se u krajnje stanje upise da li je radjena nabavka u toku dana*/
     setKrajnjaKolicinaRobe(kasa.getTrenutnaKolicinaRobe());
     setKrajnjaVrednostRobe(kasa.getTrenutnaVrednostRobe());
-    zavrsnoStanje.open("zavrsnoStanje.txt");
-    if(zavrsnoStanje.is_open())
+    /**ios::app Otvori fajl na kraju i nastavi da pises u njega*/
+    celodnevniIzvestaj.open("celodnevni_izvestaj.txt",ios::app);
+    if(celodnevniIzvestaj.is_open())
     {
-        zavrsnoStanje<<"***********Krajnje stanje***********"<<endl;
-        zavrsnoStanje<<"1. Sampona ima " + to_string(kasa.getKolicinaSampona())<<endl;
-        zavrsnoStanje<<"2. Krema   ima " + to_string(kasa.getKolicinaKrema())  <<endl;
-        zavrsnoStanje<<"3. Ulja    ima " + to_string(kasa.getKolicinaUlja())   <<endl;
-        zavrsnoStanje<<"4. Pilinga ima " + to_string(kasa.getKolicinaPilinga())<<endl;
-        zavrsnoStanje<<"5. Ukupna kolicina preostale robe = [" + to_string(kasa.getTrenutnaKolicinaRobe()) + "] artikla"<<endl;
-        zavrsnoStanje<<"6. Ukupna vrednost preostale robe = [" + to_string(kasa.getTrenutnaVrednostRobe()) + "] artikla"<<endl;
-        zavrsnoStanje<<"7. Prodato = [" + to_string(pocetnaKolicinaRobe - krajnjaKolicinaRobe) + "] artikala"<<endl;
-        zavrsnoStanje<<"8. ZARADA  = [" + to_string(pocetnaVrednostRobe - krajnjaVrednostRobe) + "] "<<endl;
-        zavrsnoStanje.close ();
+        celodnevniIzvestaj<<"***********Krajnje stanje***********"<<endl;
+        celodnevniIzvestaj<<"1. Sampona ima " + to_string(kasa.getKolicinaSampona())<<endl;
+        celodnevniIzvestaj<<"2. Krema   ima " + to_string(kasa.getKolicinaKrema())  <<endl;
+        celodnevniIzvestaj<<"3. Ulja    ima " + to_string(kasa.getKolicinaUlja())   <<endl;
+        celodnevniIzvestaj<<"4. Pilinga ima " + to_string(kasa.getKolicinaPilinga())<<endl;
+        celodnevniIzvestaj<<"5. Ukupna kolicina preostale robe = [" + to_string(kasa.getTrenutnaKolicinaRobe()) + "] artikla"<<endl;
+        celodnevniIzvestaj<<"6. Ukupna vrednost preostale robe = [" + to_string(kasa.getTrenutnaVrednostRobe()) + "] artikla"<<endl;
+        celodnevniIzvestaj<<"7. Prodato = [" + to_string(pocetnaKolicinaRobe - krajnjaKolicinaRobe) + "] artikala"<<endl;
+        celodnevniIzvestaj<<"8. ZARADA  = [" + to_string(pocetnaVrednostRobe - krajnjaVrednostRobe) + "] "<<endl;
+        celodnevniIzvestaj.close ();
     }
     else
     {
-        cout<<"Nije moguce otvoriti fajl zavrsnoStanje"<<endl;
+        cout<<"Nije moguce otvoriti fajl celodnevni_izvestaj"<<endl;
 
     }
-
-
 }

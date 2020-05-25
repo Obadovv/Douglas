@@ -6,26 +6,16 @@
 #include "krema.hpp"
 #include "ulje.hpp"
 #include "piling.hpp"
-
+#include "vector"
 class Akcija
 {
-    private:
-        Sampon S;
-        Krema  K;
-        Ulje   U;
-        Piling P;
     public:
         //TODO: Napisati ovaj konstruktor, ostavljen je za sada ovako jer nisam sigurna kako cu dalje raditi
-        Akcija(int kombinacija, int popust):S(),
-                                            K(),
-                                            U(),
-                                            P(){}
-    private:
-        void podesiCeneProizvoda(int kombinacija,int popust);
-        void spustiCenuSampona  (int popust);
-        void spustiCenuKreme    (int popust);
-        void spustiCenuUlja     (int popust);
-        void spustiCenuPilinga  (int popust);
+        Akcija();
+        void spustiCenuSampona  (int popust,vector<Sampon> &vectorSampona);
+        void spustiCenuKreme    (int popust,vector<Krema> &vectorKrema);
+        void spustiCenuUlja     (int popust,vector<Ulje> &vectorUlja);
+        void spustiCenuPilinga  (int popust,vector<Piling> &vectorPilinga);
 };
 
 #endif // AKCIJA_HPP

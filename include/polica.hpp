@@ -46,15 +46,15 @@ class Polica
         void ispisiSvaUlja();
         void ispisiSvePilinge();
 
-        void nadjiMuskeSampone();
-        void nadjiMuskeKreme();
-        void nadjiZenskaUlja();
-        void nadjiZenskePilinge();
+        int nadjiSampon(bool);
+        int nadjiKremu(bool);
+        int nadjiUlje(bool);
+        int nadjiPiling(bool);
 
-        vector<Sampon> const &getVectorSampona() const { return vectorSampona; }
-        vector<Krema>  const &getVectorKrema()   const { return vectorKrema; }
-        vector<Ulje>   const &getVectorUlja()    const { return vectorUlja; }
-        vector<Piling> const &getVectorPilinga() const { return vectorPilinga; }
+        vector<Sampon>  &getVectorSampona()  { return vectorSampona; }
+        vector<Krema>   &getVectorKrema()    { return vectorKrema; }
+        vector<Ulje>    &getVectorUlja()     { return vectorUlja; }
+        vector<Piling>  &getVectorPilinga()  { return vectorPilinga; }
 
         private:
 

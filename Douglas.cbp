@@ -36,6 +36,7 @@
 		</Compiler>
 		<Unit filename="Ulaz" />
 		<Unit filename="include/akcija.hpp" />
+		<Unit filename="include/izvestaj.hpp" />
 		<Unit filename="include/kasa.hpp" />
 		<Unit filename="include/kasadouglas.hpp" />
 		<Unit filename="include/krema.hpp" />
@@ -48,6 +49,7 @@
 		<Unit filename="include/ulje.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/akcija.cpp" />
+		<Unit filename="src/izvestaj.cpp" />
 		<Unit filename="src/kasa.cpp" />
 		<Unit filename="src/kasadouglas.cpp" />
 		<Unit filename="src/krema.cpp" />

@@ -1,68 +1,33 @@
 #include "akcija.hpp"
-
-void Akcija::podesiCeneProizvoda(int kombinacija, int popust)
+Akcija::Akcija()
 {
-    if(popust < 0 || popust > 100)
+//ctor
+}
+void Akcija::spustiCenuSampona(int popust, vector<Sampon> &vectorSampona)
+{
+    for(auto it = vectorSampona.begin(); it!=vectorSampona.end(); it++)
     {
-        popust = 100-popust;
-    }
-    else
-    {
-        popust = 0;
-    }
-
-    if(kombinacija > 4 || kombinacija < 1)
-    {
-        kombinacija = 1;
-    }
-
-    switch(kombinacija)
-    {
-        case 1: spustiCenuSampona(popust);
-                break;
-        case 2: spustiCenuSampona(popust); spustiCenuKreme(popust);
-                break;
-        case 3: spustiCenuSampona(popust); spustiCenuKreme(popust);spustiCenuUlja(popust);
-                break;
-        case 4: spustiCenuSampona(popust); spustiCenuKreme(popust);spustiCenuUlja(popust);spustiCenuPilinga(popust);
-                break;
-        default:
-                break;
+        it->setCena(it->getCena()*(100-popust)/100);
     }
 }
-void Akcija::spustiCenuSampona(int popust)
+void Akcija::spustiCenuKreme(int popust,vector<Krema> &vectorKrema)
 {
-    //Sampon
-    int privremena_cena = S.getCena();
-    privremena_cena     = (privremena_cena*(popust/100));
-
-    S.setCena(privremena_cena);
-    S.setSvojstvo("Akcija Sampon");
+    for(auto it = vectorKrema.begin(); it!=vectorKrema.end(); it++)
+    {
+        it->setCena(it->getCena()*(100-popust)/100);
+    }
 }
-void Akcija::spustiCenuKreme(int popust)
+void Akcija::spustiCenuUlja(int popust,vector<Ulje> &vectorUlja)
 {
-    //Krema
-    int privremena_cena = K.getCena();
-    privremena_cena = (privremena_cena*(popust/100));
-
-    K.setCena(privremena_cena);
-    K.setNamena("Akcija Krema");
+     for(auto it = vectorUlja.begin(); it!=vectorUlja.end(); it++)
+    {
+        it->setCena(it->getCena()*(100-popust)/100);
+    }
 }
-void Akcija::spustiCenuUlja(int popust)
+void Akcija::spustiCenuPilinga(int popust,vector<Piling> &vectorPilinga)
 {
-    //Ulje
-    int privremena_cena = U.getCena();
-    privremena_cena     = (privremena_cena*(popust/100));
-
-    U.setCena(privremena_cena);
-    U.setVrsta("Akcija Ulje");
-}
-void Akcija::spustiCenuPilinga(int popust)
-{
-    //Piling
-    int privremena_cena = P.getCena();
-    privremena_cena     = (privremena_cena*(popust/100));
-
-    P.setCena(privremena_cena);
-    P.setAroma("Akcija Piling");
+     for(auto it = vectorPilinga.begin(); it!=vectorPilinga.end(); it++)
+    {
+        it->setCena(it->getCena()*(100-popust)/100);
+    }
 }
